@@ -1,0 +1,156 @@
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .container__box {
+    display: flex;
+    align-items: center;
+    padding-top: 44px;
+    justify-content: space-between;
+  }
+
+  .header__box {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__coffee-icon {
+    margin-left: 8px;
+  }
+
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__item {
+    margin-left: 32px;
+  }
+
+  .nav__item:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .nav__link {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+  }
+
+  .gamburger__icon {
+    display: none;
+  }
+
+  .wrap {
+    background-image: url(../images/coffee-img.png);
+    margin-top: 43px;
+    height: 450px;
+    border-radius: 10px;
+  }
+
+  .wrap__part {
+    padding-top: 50px;
+    padding-left: 86px;
+  }
+
+  .wrap__title {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #fefcf7;
+    // width: 493px;
+  }
+
+  .wrap__paragirif {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fefcf7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    width: 445px;
+  }
+
+//   TABLET-RESPONSIV
+
+
+  @media only screen and (max-width:820px) {
+    .container {
+        padding: 0 10px;
+        .container__box {
+            justify-content: space-between;
+            .gamburger__icon {
+                display: none;
+            }           
+        }
+        .wrap {
+            background-position: center;
+            .wrap__part {
+                margin-left: -28px;
+                .wrap__title {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+                .wrap__paragirif {
+                    font-size: 15px;
+                    line-height: 25px;
+                    width: 350px;
+                }
+            }
+
+        }
+    }
+    
+  }
+
+
+//   MOBAIL-RESPONSIV
+
+@media only screen and (max-width:540px) {
+    .container {
+        padding: 0 5px;
+        .container__box {
+            justify-content: space-between;
+            .nav__list {
+                display: none;
+            }
+            .gamburger__icon {
+                display: block;
+            }           
+        }
+        .wrap {
+            background-position: center;
+            .wrap__part {
+                margin-left: -52px;
+                .wrap__title {
+                    font-size: 28px;
+                    line-height: 28px;
+                    text-align: center;
+                }
+                .wrap__paragirif {
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-align: center;
+                    width: 279px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+        }
+    }
+    
+  }
+  
